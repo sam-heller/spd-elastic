@@ -1,0 +1,3 @@
+# Don't save downloaded data files
+*.csv
+*.geojson

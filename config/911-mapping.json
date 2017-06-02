@@ -1,0 +1,25 @@
+{
+	"mappings" : {
+		"report" : {
+			"_all" : {"enabled" : false},
+			"properties" : {
+               "cad_event_number" : {"type" : "integer"},
+    			"event_clearance_description" : {"type" : "string"},
+                "zone_beat" : {"type" : "keyword"},
+          		"event_clearance_group" : {"type" : "keyword"},
+              	"incident_location" : {"type" : "geo_point"},
+       			"event_clearance_subgroup" : {"type" : "keyword"},
+         		"general_offense_number" : {"type" : "integer"},     
+           		"event_clearance_code" : {"type" : "keyword"},
+           		"event_clearance_date" : {
+           			"type" : "date",
+           			"format" : "MM/dd/yyyy HH:mm:ss a"
+           		},
+         		"hundred_block_location" : {"type" : "keyword"},
+                "district_sector" : {"type" : "keyword"},
+                "census_tract" : {"type" : "keyword"},
+                "cad_cdw_id" : {"type" : "integer"}
+			}
+		}
+	}
+}

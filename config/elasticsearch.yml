@@ -1,0 +1,12 @@
+# Disable x-pack security. 
+#
+#!!!!!!!!!!!!!!!!!!!!!!!!!
+#THIS IS A REALLY TERRIBLE IDEA IF YOU'RE HOSTING THIS ANYWHERE PUBLIC
+#!!!!!!!!!!!!!!!!!!!!!!!!!
+#
+# but it makes playing around locally way more straightforward.
+xpack.security.authc:
+  anonymous:
+    username: anonymous_user 
+    roles: superuser 
+    authz_exception: true 
